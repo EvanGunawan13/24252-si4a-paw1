@@ -1,42 +1,80 @@
-/* Element Selector (untuk warna background untuk di jalankan nanti) */
-body{
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Pengaturan umum untuk body */
+body {
     background-color: #E6B2BA;
-    /* font family untuk mengganti font(gaya huruf pada saat dijalankan) */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-    color: #D0DDD0;
-    /* gunakan h1,h2,h3 lalu color untuk mengelompokkan h1,h2,h3 agar warnanya berbeda */
-    h1,h2,h3 {
-        color: #A294F9;
-    }
-}
-/* Class Selector kalau class pakai .(titik)*/
-.bg-warning{
-    background-color: aliceblue;
+/* Styling untuk elemen h1 */
+h1 {
+    color: #A294F9;
 }
 
-.text-success{
+/* Styling untuk elemen h2 */
+h2 {
+    color: #A294F9;
+}
+
+/* Styling untuk elemen p */
+p {
+    color: #D0DDD0;
+}
+
+/* Class Selector untuk background */
+.bg-warning {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Class Selector untuk text color */
+.text-success {
     color: deepskyblue;
 }
-/* id Selector kalau id pakai #(pagar)*/
-#h5{
-    color: brown;
-}
 
-a{
+/* Styling untuk tautan */
+a {
     text-decoration: none;
     color: #A294F9;
 }
 
-a:hover{
+a:hover {
     color: #A59D84;
     text-decoration: underline;
 }
 
+/* Styling untuk elemen dengan kelas rounded */
 .rounded {
     border-radius: 20px;
+    padding: 10px;
+}
+/* form */
+input[type="text"], input[type="date"], textarea,
+select{
+    width: 100%;
+    border-radius: 10px;
+    /* padding untuk sisi dalam border */
+    padding: 5px; 
+    border: 1px solid #FFA725; 
+    /* solid, dashed, dotted */
+    /* margin sisi luar border */
 }
 
+button{
+    border-radius: 10px;
+    border: 1px solid aqua;
+    background-color: blue;
+    color: cyan;
+    /* padding untuk lebar text */
+    padding: 5px;
+    width: 100%;
+}
 
+/* W3SCHOOLS untuk mencari border style */
