@@ -1,0 +1,42 @@
+/* Element Selector (untuk warna background untuk di jalankan nanti) */
+body{
+    background-color: #E6B2BA;
+    /* font family untuk mengganti font(gaya huruf pada saat dijalankan) */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #D0DDD0;
+    /* gunakan h1,h2,h3 lalu color untuk mengelompokkan h1,h2,h3 agar warnanya berbeda */
+    h1,h2,h3 {
+        color: #A294F9;
+    }
+}
+/* Class Selector kalau class pakai .(titik)*/
+.bg-warning{
+    background-color: aliceblue;
+}
+
+.text-success{
+    color: deepskyblue;
+}
+/* id Selector kalau id pakai #(pagar)*/
+#h5{
+    color: brown;
+}
+
+a{
+    text-decoration: none;
+    color: #A294F9;
+}
+
+a:hover{
+    color: #A59D84;
+    text-decoration: underline;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+

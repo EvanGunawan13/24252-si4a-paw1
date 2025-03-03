@@ -6,9 +6,42 @@
     <title>Belajar HTML</title>
 </head>
 <body>
+            <!-- Inline CSS -->
+             <!-- Style untuk mengganti warna pada huruf -->
+             <h1 style="color: blueviolet; text-align: center;" >Selamat Datang</h1>
     <h1>Selamat Datang</h1>
     <p>Hari ini belajar vcs Git, dan github serta deploy ke vercel </p>
     <p>Hari ini belajar HTML</p>
+    <!-- Internal CSS -->
+     <style>
+        /* Element Selector (untuk warna background untuk di jalankan nanti) */
+        body{
+            background-color: #E6B2BA;
+            /* font family untuk mengganti font(gaya huruf pada saat dijalankan) */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            color: #D0DDD0;
+            /* gunakan h1,h2,h3 lalu color untuk mengelompokkan h1,h2,h3 agar warnanya berbeda */
+            h1,h2,h3 {
+                color: #A294F9;
+            }
+        }
+        /* Class Selector kalau class pakai .(titik)*/
+        .bg-warning{
+            background-color: aliceblue;
+        }
+
+        .text-success{
+            color: deepskyblue;
+        }
+        /* id Selector kalau id pakai #(pagar)*/
+        #h5{
+            color: brown;
+        }
+     </style>
+
     <!-- INI KOMENTAR -->
      <!-- Komentar tidak ditampilkan di browser -->
       <!-- heading h1 sampai h6 -->
@@ -16,6 +49,8 @@
        <!-- H1 = Elemen -->
        <h2>Judul</h2>
        <h3>Judul</h3>
+       <h4 class="bg-warning text-success">Judul</h4>
+       <h5 id ="h5">Judul</h5>
        
       
        <!-- order list -->
@@ -143,19 +178,20 @@
                 </tr>
 
               
-               
+
             </tr>
 
            </table>
 
            <!-- Links -->
+            <!-- Pastikan path yang benar -->
             <a href="profil.html">Profil</a>
             <a href="hubungi.html">Hubungi Kami</a>
 
             <!-- Link Eksternal (Link yang sudah ada) -->
+             <!-- target adalah untuk membuka tab baru untuk link yang sudah di input -->
             <a href="https://mdp.ac.id"
             target="_blank">Kampus MDP</a>
-            
 
 </body>
 </html>

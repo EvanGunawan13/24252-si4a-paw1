@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <h1>Hubungi Kami</h1>
+    <form action="proses.php" method="get">
+        Nama Lengkap <br>
+        <input type="text" name="namaLengkap" id="namaLengkap" 
+        required> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="TanggalLahir"
+        id="TanggalLahir"> <br>
+        JenisKelamin <br>
+        <input type="radio" name="jk" id="jkl"
+        value="L" checked> 
+        Laki-Laki <br>
+        <input type="radio" name="jk" id="jkl"
+        value="p"> 
+        Perempuan <br>
+        Tempat Lahir <br>
+        <select name="tempatlahir" id="tempatlahir">
+        <option value="PLB">Palembang</option>
+        <option value="JKT">Jakarta</option>
+        <option value="NGW">Ngawi</option>
+        <option value="JMK">Jomokerto</option>
+        </select> <br>
+        Pesan <br>
+        <textarea name="pesan" id="pesan"></textarea>
+        <br>
+        <button type="submit">Kirim</button>
+        
+
+    </form>
+</body>
+</html>
