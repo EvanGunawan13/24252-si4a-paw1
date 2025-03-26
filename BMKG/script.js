@@ -1,4 +1,4 @@
-fetch("https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json")
+fetch("https://data.bmkg.then.go.id/DataMKG/TEWS/autogempa.json")
 .then( res => res.json() )
 .then( data => {
     console.log(data);
