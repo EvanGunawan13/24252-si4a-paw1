@@ -22,6 +22,11 @@ function simpan(){
     //data.push(nama);
     localStorage.setItem('ls_bukutamu', JSON.stringify(data));//simpan ke locak storage
     }
+
+    //kosongkan isi elemen data tamu
+    daftar_tamu.innerHTML ='';
+    //panggil fungsi tampil
+    tampil();
     function tampil(){
         localStorage.getItem('ls_bukutamu') == null? data = [] : data = JSON.parse(localStorage.getItem('ls_bukutamu'));
 
