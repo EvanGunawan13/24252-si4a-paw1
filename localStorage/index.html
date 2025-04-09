@@ -4,15 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Formulir Buku Tamu</h1>
-    <input type="text" id="nama" placeholder="nama lengkap"><br>
-    <input type="text" id="keperluan" placeholder="Keperluan"><br>
+<style>
+    body{
+        background-color: greenyellow
+    }
+
+    select{
+    width: 10%;
+    border-radius: 10px;
+    padding: 5px; 
+    border: 1px solid #FFA725; 
+    }
+
+    h1{
+        color: chocolate;
+    }
+
+    input{
+        border-radius: 5px;
+    border: 1px solid
+    }
+
+    p {
+    color: #000000;
+}
+
+button{
+    border-radius: 10px;
+    border: 1px solid rgb(217, 255, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(179, 0, 255);
+    padding: 5px;
+    width: 15%;
+}
+
+</style>
+
+    <div class="container">
+        
+    </div>
+    <center><h1>Formulir Buku Tamu Perpustakaan </h1>
+    Nama Lengkap <br>
+    <input type="text" id="nama" placeholder="nama lengkap"
+    keperluan <br>
+    <input type="text" id="keperluan" placeholder="Keperluan"
+    Jenis Kelamin <br>
+    <select id="jk"> <br>
+        <option value="L">Laki-Laki</option>
+        <option value="P">Perempuan</option>
+    </select><br>
     <button onclick="simpan()">Simpan</button>
+</center>
 
     <h1>Daftar Tamu</h1>
     <ul id="daftar_tamu"></ul>
+
+<!-- tampil -->
+ <center>   
+    <p id="total_tamu"></p>
+    <p id="tamu_laki"></p>
+    <p id="tamu_perempuan"></p>
+</center>
     <script src="script.js"></script>
 </body>
 </html>
