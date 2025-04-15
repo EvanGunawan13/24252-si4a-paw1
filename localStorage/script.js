@@ -21,7 +21,7 @@ function simpan(){
     //let tampung =[];//buat array kosong
     //tampung.push(nama);//memasukan value nama ke array tampung
     //data.push(nama);
-    localStorage.setItem('ls_bukutamu', JSON.stringify(data));//simpan ke locak storage
+    localStorage.setItem('ls_bukutamu', JSON.stringify(data));//simpan ke local storage
     }
 
     //kosongkan isi elemen data tamu
