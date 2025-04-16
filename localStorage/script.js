@@ -50,6 +50,13 @@ function simpan(){
             </li>`
         })
 
-        document.getElementById('tamu_laki').innerHTML = `total tamu laki-laki : ${total_laki}`;
-        document.getElementById('tamu_perempuan').innerHTML = `total tamu perempuan : ${total_perempuan}`;
+        document.getElementById('tamu_laki').innerHTML = `<h2>Tamu laki-laki <br> ${total_laki}</h2>`;
+
+            document.getElementById('tamu_perempuan').innerHTML = `<h2>Tamu perempuan<br> ${total_perempuan}</h2>`;
+            
+            console.log(data.filter( (keperluan) => keperluan.perlu == 'Membaca').length);
+            
+            document.getElementById('membaca').innerHTML = `<h2>Membaca <br> ${data.filter((keperluan) => keperluan.perlu == 'Membaca').length}</h2>`;
+            document.getElementById('browsing').innerHTML = `<h2>Browsing <br> ${data.filter((keperluan) => keperluan.perlu == 'Browsing').length}</h2>`;
+            document.getElementById('pinjam_buku').innerHTML = `<h2>Pinjam Buku <br> ${data.filter((keperluan) => keperluan.perlu == 'Pinjam Buku').length}</h2>`;
     }
