@@ -13,7 +13,7 @@ function simpan(){
     if(localStorage.getItem('ls_bukutamu')==null){
          data =[]; // buat array kosong
     } else {
-        //ambil data dari local storahe
+        //ambil data dari local storage
          data = JSON.parse(localStorage.getItem('ls_bukutamu')); 
     }
 
